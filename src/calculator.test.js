@@ -12,6 +12,10 @@ test('Calculate: 3 divide 2 = 1.5', () => {
     expect(calculator.divide(3, 2)).toBe(1.5)
 })
 
+test('Calculate: 3 divide 0 = ERROR', () => {
+    expect(calculator.divide(3, 0)).toBe('ERROR')
+})
+
 test('Calculate: 3 multiply 2 = 6', () => {
     expect(calculator.multiply(3, 2)).toBe(6)
 })
